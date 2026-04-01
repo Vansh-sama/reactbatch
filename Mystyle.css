@@ -1,0 +1,282 @@
+/* =======================
+   BODY & ROOT BACKGROUND
+======================= */
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #eef4ff 0%,
+    #f6f8fc 40%,
+    #ffffff 100%
+  );
+}
+
+
+/*  */
+
+
+
+/* =======================
+   ANNOUNCEMENT & NEWS
+======================= */
+.info-section {
+  background: linear-gradient(135deg, #f1f5ff, #ffffff);
+  border-left: 5px solid #0d6efd;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.info-section h2 {
+  text-align: center;
+  color: #0d6efd;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.info-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4b5563;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.info-section h5 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 14px;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.info-section h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin: 6px 0;
+  padding-left: 16px;
+  position: relative;
+}
+
+.info-section h6::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0d6efd;
+  font-size: 18px;
+}
+
+.info-section h6 + p {
+  margin-left: 16px;
+  margin-bottom: 12px;
+  font-size: 13.5px;
+}
+
+/* =======================
+   COURSE CARDS
+======================= */
+.card {
+  border: none;
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(13, 110, 253, 0.25);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0d6efd;
+  letter-spacing: 1px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 15px;
+}
+
+/* =======================
+   BUTTON
+======================= */
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.btn-primary:hover {
+  background-color: #084298;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 768px) {
+  .carousel img {
+    height: 300px;
+  }
+
+  .carousel-caption {
+    bottom: 20%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 24px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+  }
+
+  .info-section {
+    padding: 18px;
+  }
+}
+.my-box {
+  background-color:#032354; /* light blue */
+ 
+}
+
+.mini-slider-img {
+  height: 450px;        /* 👈 bohot choti */
+  object-fit: cover;
+  
+}
+
+.small-carousel {
+  max-width: 1300px;     /* 👈 slider di width choti */
+  margin: auto;
+}
+
+/* Mobile te hor choti */
+@media (max-width: 576px) {
+  .mini-slider-img {
+    height: 80px;
+  }
+}
+
+/* ===== MAIN WRAPPER ===== */
+.info-wrapper-single {
+  margin-top: 35px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+/* ===== SINGLE COLUMN ===== */
+.single-col {
+  max-width: 560px;                 /* 👈 column thodi vaddi */
+}
+
+/* ===== BOX DESIGN ===== */
+.info-box-single {
+  background: linear-gradient(135deg, #ffffff, #f6f9ff);
+  padding: 26px;                    /* 👈 padding vaddi */
+  border-radius: 14px;              /* 👈 smooth corners */
+  border: 1px solid #dbe6ff;
+  margin-bottom: 35px;              /* 👈 gap vadda */
+  box-shadow: 0 12px 30px rgba(19, 93, 203, 0.12); /* 👈 attractive shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ===== HOVER EFFECT ===== */
+.info-box-single:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(19, 93, 203, 0.2);
+}
+
+/* ===== TITLE ===== */
+.title-mini {
+  font-size: 17px;                  /* 👈 title vadda */
+  font-weight: 800;
+  color: #135dcb;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== TEXT ===== */
+.text-mini {
+  font-size: 14px;                  /* 👈 text vadda */
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.6;
+}
+
+/* ===== LIST ===== */
+.list-mini {
+  list-style: none;
+  padding-left: 0;
+  margin: 18px 0;
+}
+
+.list-mini li {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding-left: 4px;
+}
+
+/* ===== ICON SIZE ===== */
+.mini-icon {
+  font-size: 18px;
+  color: #135dcb;
+}
+
+.inline-icon {
+  font-size: 14px;
+  color: #135dcb;
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 576px) {
+  .single-col {
+    max-width: 100%;
+  }
+
+  .info-box-single {
+    padding: 22px;
+    margin-bottom: 28px;
+  }
+
+  .title-mini {
+    font-size: 16px;
+  }
+}
+
